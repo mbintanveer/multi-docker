@@ -18,8 +18,9 @@ after_success:
   # Log in to the docker CLI
   - echo $DOCKER_PASSWORD
   - echo $DOCKER_ID
-  - docker login -u "$DOCKER_ID" -p eZYPGUXSQ8-F65&
-  # Take those images and push them to docker hub
+#  - docker login -u "$DOCKER_ID" -p eZYPGUXSQ8-F65&
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
+ # Take those images and push them to docker hub
   - docker push mbintanveer/multi-client
   - docker push mbintanveer/multi-nginx
   - docker push mbintanveer/multi-server
