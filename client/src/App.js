@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn ReactHEHEsYOSL
+            Learn ReactHEHEsYOSLXD
           </a>
           <Link to="/">Homes NEW</Link>
           <Link to="/otherpage">Others Page</Link>
